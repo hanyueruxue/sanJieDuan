@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <button id="btn">add</button>
+
+
+  <script>
+    var btn = document.getElementById("btn");
+    function add() {
+      var id = Math.floor(Math.random() * 10000);
+      history.pushState({ id: id }, "", "id=" + id);
+    }
+
+
+    btn.addEventListener('click', () => {
+      add();
+    })
+
+
+    window.onpopstate = function () {
+      console.log(history.state)
+    }
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="demo_form.php" method="get" autocomplete="off" id="testform">
+    <input type="text" name="usr_name" required="required" />
+    First name: <input type="text" name="fname" autofocus /><br />
+    Last name: <input type="text" name="lname" /><br />
+    E-mail: <input type="email" name="email" autocomplete="off" /><br />
+    <input type="file" name="img" multiple />
+    Country code:
+    <input type="text" name="country_code" pattern="[A-z]{3}" title="Three letter country code" />
+
+    <input type="password" name="user_search" placeholder="请输入密码" />
+
+    <input type="submit" />
+    <input type="submit" formaction="a.php" formnovalidate />
+
+  </form>
+  <input type="text" name="test" form="testform" />
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+语义化标签
+  seo
+  可维护性，扩展性
+面向对象的开发
+ 封装、多态 、继承
+
+window.onerror
+onbeforeunload
+onhashchange
+onpopstate
+oncontextmenu
+
